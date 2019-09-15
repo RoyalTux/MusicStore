@@ -1,0 +1,15 @@
+﻿@using MusicStore.Domain.Entities
+@model IEnumerable<MusicTrack>
+
+@{
+    ViewBag.Title = "Goods";
+}
+
+@foreach (var musicTrack in @Model)
+{
+    <div>
+        <h3>@musicTrack.Name</h3>
+        <p>@musicTrack.Description</p>
+        <h4>@musicTrack.Price.ToString("# dol")</h4>
+    </div>
+}

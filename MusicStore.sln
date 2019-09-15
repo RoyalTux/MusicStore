@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Domain", "MusicStore.Domain\MusicStore.Domain.csproj", "{A7E18FA9-004B-4621-B354-05B4D7A6162E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.WebUI", "MusicStore.WebUI\MusicStore.WebUI.csproj", "{2732FF91-809F-4EE4-AF64-18158EA6AFDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.UnitTests", "MusicStore.UnitTests\MusicStore.UnitTests.csproj", "{6D19F9A3-068F-4969-8B6F-037CB39C7701}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7E18FA9-004B-4621-B354-05B4D7A6162E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E18FA9-004B-4621-B354-05B4D7A6162E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E18FA9-004B-4621-B354-05B4D7A6162E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E18FA9-004B-4621-B354-05B4D7A6162E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2732FF91-809F-4EE4-AF64-18158EA6AFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2732FF91-809F-4EE4-AF64-18158EA6AFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2732FF91-809F-4EE4-AF64-18158EA6AFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2732FF91-809F-4EE4-AF64-18158EA6AFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D19F9A3-068F-4969-8B6F-037CB39C7701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D19F9A3-068F-4969-8B6F-037CB39C7701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D19F9A3-068F-4969-8B6F-037CB39C7701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D19F9A3-068F-4969-8B6F-037CB39C7701}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
