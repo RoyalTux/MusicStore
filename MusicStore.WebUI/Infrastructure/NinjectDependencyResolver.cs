@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using MusicStore.Domain.Abstract;
-using MusicStore.Domain.Entities;
 using MusicStore.Domain.Concrete;
+using MusicStore.Domain.Entities;
 
 namespace MusicStore.WebUI.Infrastructure
 {
@@ -39,7 +39,7 @@ namespace MusicStore.WebUI.Infrastructure
                 new MusicTrack { Name = "Modus - Sonder", Price = 11.3M }
             });
             //_kernel.Bind<IMusicRepository>().ToConstant(mock.Object);
-            _kernel.Bind<IMusicRepository>().To<EFMusicRepository>();
+            _kernel.Bind<IMusicRepository>().To<EfMusicRepository>();
         }
     }
 }
