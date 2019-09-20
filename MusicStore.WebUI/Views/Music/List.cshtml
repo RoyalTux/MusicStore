@@ -1,15 +1,18 @@
 ﻿@using MusicStore.Domain.Entities
-@model IEnumerable<MusicTrack>
+@model MusicStore.WebUI.Models.MusicListViewModel
 
 @{
-    ViewBag.Title = "Goods";
+	ViewBag.Title = "Goods";
 }
 
-@foreach (var musicTrack in @Model)
-{
-    <div>
-        <h3>@musicTrack.Name</h3>
-        <p>@musicTrack.Description</p>
-        <h4>@musicTrack.Price.ToString("# dol")</h4>
-    </div>
+@{
+	System.Diagnostics.Debug.Assert(@Model?.musicTracks != null, "@Model?.musicTracks != null");
 }
+@foreach (var musicTrack in @Model?.musicTracks)
+{
+	@Html.Partial("MusicSummary", musicTrack)
+}
+
+<div class="btn-group pull-right">
+	@Html.PageLinks(Model.pagingInfo, x => Url.Action("List", new {page = x}))
+</div>

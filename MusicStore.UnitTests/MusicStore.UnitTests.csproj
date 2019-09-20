@@ -88,9 +88,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
-    <Compile Include="CanPaginateUnitTest.cs" />
+    <Compile Include="PaginateUnitTest.cs" />
     <Compile Include="GeneratePageUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendPaginationViewModelUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

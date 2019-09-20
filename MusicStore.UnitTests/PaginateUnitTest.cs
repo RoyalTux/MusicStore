@@ -5,11 +5,12 @@ using Moq;
 using MusicStore.Domain.Abstract;
 using MusicStore.Domain.Entities;
 using MusicStore.WebUI.Controllers;
+using MusicStore.WebUI.Models;
 
 namespace MusicStore.UnitTests
 {
 	[TestClass]
-	public class CanPaginateUnitTest
+	public class PaginateUnitTest
 	{
 		[TestMethod]
 		public void CanPaginateTest()
@@ -25,9 +26,10 @@ namespace MusicStore.UnitTests
 			});
 			var controller = new MusicController(mock.Object) {pageSize = 3};
 
-			var resultTracks = (IEnumerable<MusicTrack>) controller.List(2).Model;
+			//var resultTracks = (IEnumerable<MusicTrack>) controller.List(2).Model;
+			var resultTracks = (MusicListViewModel)controller.List(2).Model;
 
-			var musicTracks = resultTracks.ToList();
+			var musicTracks = resultTracks.musicTracks.ToList();
 			Assert.IsTrue(musicTracks.Count == 2);
 			Assert.AreEqual(musicTracks[0].Name, "Track4");
 			Assert.AreEqual(musicTracks[1].Name, "Track5");

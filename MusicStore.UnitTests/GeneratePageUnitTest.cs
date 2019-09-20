@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MusicStore.WebUI.HtmlHelpers;
 using MusicStore.WebUI.Models;
